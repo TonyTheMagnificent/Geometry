@@ -21,7 +21,7 @@ int main()
 		printf("Invalid input, enter again: ");
 		scanf("%d", &n);	
 	}
-	Outputs = malloc(sizeof(Circle)*n);
+	Outputs = (Circle *)malloc(sizeof(Circle)*n);
 	int i;
 	for(i = 0; i < n; i++)
 	{
